@@ -12,10 +12,17 @@ class ProportionalWidget {
 
   double height(double value) => (size.height * (value / size.height));
 
+  double heightPorcent(double value) => ((value *  size.height)/100);
+
+  double get heightPage => size.height;
+  
+
   double width(double value) => (size.width * (value / size.width));
   
-  double get widthPage => MediaQuery.of(context).size.width;
+  double widthPorcent(double value) => ((value *  size.width)/100);
 
-  double get heightPage => MediaQuery.of(context).size.height;
+  double get widthPage => size.width;
+
+  
 }
 
