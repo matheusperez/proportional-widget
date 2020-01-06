@@ -3,10 +3,10 @@ library proportional_widget;
 import 'package:flutter/material.dart';
 
 
-class RespHelper {
+class ProportionalWidget {
   final BuildContext context;
 
-  RespHelper(this.context);
+  ProportionalWidget(this.context);
 
   Size get size => MediaQuery.of(context).size;
 
